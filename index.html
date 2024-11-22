@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q2SW2</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<style>
+		body{
+			background-image: url('https://shop.robomanthan.com/wp-content/uploads/2024/04/Robot.png');
+		}
+		h1{
+			color: #091842;
+			text-align: center;
+			font-family: sans-serif;
+		}
+		label{
+			color: #dadce3;
+		}
+		.select-container,.textarea-container{
+			display: flex;
+			justify-content: center;
+
+		}
+		select, textarea {
+			width: 100%; max-width: 100%; box-sizing: border-box;
+		}
+	</style>
+</head>
+<body>
+	<h1>Robotics Club Form</h1>
+	<br>
+	<div class="container">
+		<form>
+			<div class="row">
+				<div class="col-md-6">
+				    <label for="name">Name:</label>
+				    <input type="text" class="form-control">
+				</div>
+				<div class="col-md-6">
+					<label for="age">Age:</label>
+					<br>
+					<input type="text" class="form-control">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+				    <label for="email">Email:</label>
+				    <input type="text" class="form-control">
+				</div>
+				<div class="col-md-6">
+					<label for="phone#">Phone Number:</label>
+					<br>
+					<input type="text" class="form-control">
+				</div>
+			</div>
+			<br>
+				<div class="row">
+				<div class="col-md-6">
+				    <label for="Topics" id="topics">Choose A Robotic Topic:</label>
+				    <br>
+				    <input type="checkbox"  name="topic1"><label for="topic1">Mechanical</label>
+				    <br>
+				    <input type="checkbox" name="topic2"><label for="topic2">Programming</label>
+				    <br>
+				    <input type="checkbox"  name="topic3"><label for="topic3">Electronics</label>
+				</div>
+				<div class="col-md-6">
+					<label for="Level">How Experienced Are You?</label>
+					<br>
+					<input type="radio" name="level1"><label for="level1">Begginer</label>
+					<br>
+					<input type="radio" name="level2"><label for="level2">Intermediate</label>
+					<br>
+					<input type="radio" name="level3"><label for="level3">Advanced</label>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-md-12">
+				    <label for="proj" id="proj">Statement of Interest?</label>
+				    <br>
+				    <div class="select-container">
+				    <select id="projs" name="projs">
+				    <option value="C">Choose Project</option>
+				    <option value="CH">Chore Helper</option>
+  	  	  	  		<option value="SV">Small Vehicles</option>
+  	  	  	  		<option value="D">Drones</option>
+  	  	  	  	    </select>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					
+					<label for="reason">Why Do You Want To Join?</label>
+					<br>
+					<div class="textarea-container">
+					<textarea id="reason" rows="5" cols="55" placeholder="Add a comment..."></textarea>
+			</div>
+			<br>
+				<div class="col-md-16">
+					<button class="btn btn-info">Submit</button>
+				</div>
+		</form>
+	</div>
+
+</body>
+</html>
